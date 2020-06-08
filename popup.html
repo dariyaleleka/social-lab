@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Page</title>
+  <meta name="description" content="Page description" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />
+</head>
+<body>
+  <!-- svg sprite -->
+  <!-- //=include spriteSvg.svg -->
+  <!-- ========== -->
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__container-content">
+          <div id="menu" class="header__container-content-menu menu">
+            <div id="burger" class="burger">
+              <span class="line menu-top"></span>
+              <span class="line menu-middle"></span>
+              <span class="line menu-bottom"></span>
+            </div>
+            <a href="#">Меню</a>
+          </div>
+          <div class="header__container-content-logo">
+            <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+          </div>
+          <div class="header__container-content-lang">
+            <div class="lang-items">
+              <a class="active" href="#">УКР</a>
+              <a href="#">ENG</a>
+            </div>
+            <div class="lang-items-mob">
+              <a href="#">УКР</a>
+              <img src="assets/img/arrow.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="main_menu" class="main-menu__opened" style="top: -900px; opacity: 0">
+      <div class="main-menu__opened-container">
+        <div class="content-menu">
+            <div class="content-menu__nav">
+              <nav>
+                <ul>
+                  <li>Про нас</li>
+                  <li>Історії</li>
+                  <li>Пріорітети</li>
+                  <li>Команда</li>
+                  <li>Проекти</li>
+                  <li>Партнери</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="content-menu__contacts">
+              <h3>Контакти</h3>
+              <p class="adress">01054, Київ, вул. Бульварно-Кудрявська, <br>29-а, оф.25</p>
+              <p class="download green-links">Завантажіти звіт</p>
+              <p class="join  green-links">Долучитись</p>
+              <div class="social-links">
+                <a href="#"><img src="assets/img/fb.svg" alt=""></a>
+                <a href="#"><img src="assets/img/inst.svg" alt=""></a>
+                <a href="#"><img src="assets/img/telegram.svg" alt=""></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- .header end -->
+    
+    <div class="popup-window">
+        <div class="popup-window__form">
+            <h4>Стань учасником в проектах</h4>
+            <input class="popup-row" type="text" placeholder="Email">
+            <button class="popup-button">Долучитись</button>
+        </div>
+    </div>
+
+  </div>
+  <!-- .wrapper end -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
