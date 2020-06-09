@@ -52,7 +52,6 @@
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
-    opacity: .25;
 }
 
 .slick-prev:before,
@@ -62,7 +61,6 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -113,8 +111,7 @@
 
 .slick-dots
 {
-    position: absolute;
-    bottom: -42px;
+    position: relative;
 
     display: flex;
     align-items: center;
@@ -212,4 +209,5 @@
     width: 20px;
     height: 20px;
     background: #5DE0B1;
+    margin: -3px 0;
 }

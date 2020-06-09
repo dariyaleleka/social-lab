@@ -30,12 +30,12 @@ var menuLink = document.getElementById('menu');
 
 window.onload = function () {
   document.getElementById('menu').onclick = function () {
-    openbox('main_menu', this);
+    openboxmenu('main_menu', this);
     return false;
   };
 };
 
-function openbox(id, toggler) {
+function openboxmenu(id, toggler) {
   var div = document.getElementById(id);
   var menuContent = document.getElementById('main_menu');
 
@@ -75,8 +75,6 @@ function openbox(id, toggler) {
 window.addEventListener('load', function () {
   var button = document.querySelector('.slider__content');
   var div = document.querySelector('.image-slider');
-  console.log(button);
-  console.log(div);
 
   button.onmouseover = function (e) {
     console.log('work');
@@ -154,10 +152,10 @@ window.addEventListener('load', function () {
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
-    appendArrows: $('.projects__arrows'),
-    prevArrow: '<div class="arrow"><img src="assets/img/arrow-l.svg" alt=""></div>',
-    nextArrow: '<div class="arrow"><img src="assets/img/arrow-r.svg" alt=""></div>',
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
     dots: true,
+    appendDots: '#mainSlider__dots1',
     responsive: [{
       breakpoint: 1024,
       settings: {
@@ -197,5 +195,18 @@ window.addEventListener('load', function () {
       }
     }]
   });
+});
+$('.show_popup').click(function () {
+  // Вызываем функцию по нажатию на кнопку
+  var popup_id = $('#' + $(this).attr("rel")); // Связываем rel и popup_id
+
+  $(popup_id).show(); // Открываем окно
+
+  $('.popup-window').show();
+  $('.popup-window__form').show(); // Открываем блок заднего фона
+});
+$('.popup-window').click(function () {
+  // Обрабатываем клик по заднему фону
+  $('.popup-window, .popup-window__form').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
 });
 //# sourceMappingURL=main.js.map
